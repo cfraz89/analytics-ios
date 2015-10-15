@@ -1571,6 +1571,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1604,6 +1605,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"ANALYTICS_VERSION=$(ANALYTICS_VERSION)",
@@ -1643,6 +1645,58 @@
 					"$(PROJECT_DIR)/build/Debug-appletvos",
 				);
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/Amplitude-iOS\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/AppsFlyer-SDK\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/Apptimize\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/Bugsnag\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/Countly\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/CrittercismSDK\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/Expecta\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/FlurrySDK\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/GoogleAnalytics\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/GoogleIDFASupport\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/Kahuna\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/Localytics\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/Mixpanel\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/MoEngage-iOS-SDK\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/OCHamcrest\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/OCMock\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/OCMockito\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/Optimizely-iOS-SDK\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/Quantcast-Measure\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/TRVSDictionaryWithCaseInsensitivity\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/Taplytics\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/Tapstream\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/UXCam\"",
+					"-fembed-bitcode",
+				);
 				OTHER_LDFLAGS = (
 					"-l\"AppsFlyerLib\"",
 					"-l\"GoogleAnalytics\"",
@@ -1733,6 +1787,58 @@
 					"$(PROJECT_DIR)/Pods/CrittercismSDK/CrittercismSDK",
 					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
 					"$(PROJECT_DIR)/build/Debug-appletvos",
+				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/Amplitude-iOS\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/AppsFlyer-SDK\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/Apptimize\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/Bugsnag\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/Countly\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/CrittercismSDK\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/Expecta\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/FlurrySDK\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/GoogleAnalytics\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/GoogleIDFASupport\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/Kahuna\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/Localytics\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/Mixpanel\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/MoEngage-iOS-SDK\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/OCHamcrest\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/OCMock\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/OCMockito\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/Optimizely-iOS-SDK\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/Quantcast-Measure\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/TRVSDictionaryWithCaseInsensitivity\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/Taplytics\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/Tapstream\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/UXCam\"",
+					"-fembed-bitcode",
 				);
 				OTHER_LDFLAGS = (
 					"-l\"AppsFlyerLib\"",
